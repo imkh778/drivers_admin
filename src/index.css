@@ -1,0 +1,73 @@
+:root {
+  --bg: #ffffff;
+  --ink: #141414;
+  --muted: #5c5c5c;
+  --faint: #8a8a8a;
+  --line: #e6e6e6;
+  --line-strong: #d2d2d2;
+  --soft: #f5f6f5;
+  --green: #0e7c3a;
+  --green-hover: #0c6931;
+  --green-ink: #0b5e2c;
+  --green-soft: #e8f6ed;
+  --green-bar: #9ed4b4;
+  --warn-bg: #f8f3e8;
+  --warn-ink: #7a5410;
+  --shadow: 0 1px 2px rgba(20, 20, 20, 0.04), 0 10px 28px rgba(20, 20, 20, 0.05);
+  --radius: 12px;
+  --sidebar: 248px;
+  --font: "Manrope", "Segoe UI", sans-serif;
+  color-scheme: light;
+  font: 15px/1.5 var(--font);
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { min-height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: left;
+  border: 0;
+  min-height: 100svh;
+  display: block;
+}
+
+h1, h2, h3, p { margin: 0; }
+
+button, input { font: inherit; color: inherit; }
+
+button { cursor: pointer; }
+
+button:focus-visible,
+input:focus-visible,
+tr:focus-visible,
+.marker:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
